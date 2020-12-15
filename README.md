@@ -4,13 +4,13 @@ A new Flutter application.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+效果如下所示：
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[视频效果链接点击这里](https://github.com/yongfengnice/flutter_nest_page_view/blob/main/video/device-2020-12-15-165825.mp4)
+
+<img src="https://img2020.cnblogs.com/blog/1020339/202012/1020339-20201215175704321-287991037.png" style="width:200px;" />
+<img src="https://img2020.cnblogs.com/blog/1020339/202012/1020339-20201215175716528-612912713.png" style="width:200px;" />
+
+
