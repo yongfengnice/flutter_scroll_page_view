@@ -8,4 +8,4 @@ A new Flutter application.
 
 效果如下所示：
 
-![滑动效果展示](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/df0387db717848a5a61370c9a5754341~tplv-k3u1fbpfcp-zoom-1.image)
+![滑动效果展示](https://img2020.cnblogs.com/blog/1020339/202012/1020339-20201217091002691-859153011.gif)
