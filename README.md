@@ -1,6 +1,6 @@
 # flutter_nest_page_view
 
-A new Flutter application.
+flutter实现page_view嵌套滚动.
 
 ## Getting Started
 
