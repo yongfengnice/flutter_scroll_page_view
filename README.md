@@ -1,6 +1,6 @@
 # flutter_nest_page_view
 
-flutter实现page_view嵌套滚动.
+flutter通过处理PageView滚动事件实现tab嵌套滚动.
 
 ## Getting Started
 
