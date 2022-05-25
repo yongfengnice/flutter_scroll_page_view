@@ -1,68 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_nest_page_view/page_view_scroll_utils.dart';
-import 'package:flutter_nest_page_view/tar_bar_view_scroll_test.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.white,
-        brightness: Brightness.light,
-      ),
-      // home: PageViewScrollPage(),
-      home: MainPage(),
-    ),
-  );
-}
-
-class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('PageView嵌套滑动测试'),
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            width: double.infinity,
-          ),
-          MaterialButton(
-            color: Colors.deepOrangeAccent,
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (ctx) {
-                return PageViewScrollPage();
-              }));
-            },
-            child: Text("PageView嵌套滑动测试"),
-          ),
-          MaterialButton(
-            color: Colors.deepOrangeAccent,
-            child: Text("TarBarView嵌套滑动测试"),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (ctx) {
-                return TarBarScrollPage();
-              }));
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         primaryColor: Colors.white,
+//         brightness: Brightness.light,
+//       ),
+//       home: PageViewScrollPage(),
+//     ),
+//   );
+// }
 
 class PageViewScrollPage extends StatefulWidget {
   @override
   _PageViewScrollPageState createState() => _PageViewScrollPageState();
 }
 
-class _PageViewScrollPageState extends State<PageViewScrollPage>
-    with SingleTickerProviderStateMixin {
+class _PageViewScrollPageState extends State<PageViewScrollPage> with SingleTickerProviderStateMixin {
   late PageController _pageController;
   late TabController _bottomController;
 
@@ -112,8 +69,7 @@ class _PageViewScrollPageState extends State<PageViewScrollPage>
             indicatorWeight: 0.1,
             controller: _bottomController,
             onTap: (index) {
-              _pageController.animateToPage(index,
-                  duration: Duration(milliseconds: 300), curve: Curves.ease);
+              _pageController.animateToPage(index, duration: Duration(milliseconds: 300), curve: Curves.ease);
             },
             unselectedLabelColor: Colors.grey,
             tabs: [
@@ -138,8 +94,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
+class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
   late TabController _tabController;
   late PageViewScrollUtils _pageViewScrollUtils;
 
@@ -147,8 +102,7 @@ class _HomePageState extends State<HomePage>
   void initState() {
     super.initState();
     _tabController = TabController(length: 6, vsync: this);
-    _pageViewScrollUtils =
-        PageViewScrollUtils(widget.pageController, _tabController);
+    _pageViewScrollUtils = PageViewScrollUtils(widget.pageController, _tabController);
   }
 
   @override
