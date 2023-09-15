@@ -15,6 +15,10 @@ class PageViewScrollUtils {
         _drag = pageController.position.drag(DragStartDetails(), () {
           _drag = null;
         });
+      }else if(notification.direction == ScrollDirection.forward && tabController.index == 0){
+        _drag = pageController.position.drag(DragStartDetails(), () {
+          _drag = null;
+        });
       }
     }
     if (notification is OverscrollNotification) {
